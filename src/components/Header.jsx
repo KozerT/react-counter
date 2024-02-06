@@ -5,7 +5,7 @@ const Header = () => {
   log("<Header /> rendered", 1);
   return (
     <header id="main-header">
-      <h1>React - Behind The Scenes</h1>
+      <h1>React Counter</h1>
     </header>
   );
 };
