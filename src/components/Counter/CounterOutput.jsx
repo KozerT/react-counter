@@ -1,7 +1,8 @@
-import React from "react";
+import { log } from "../../log.js";
 
-const CounterOutput = () => {
-  return <div></div>;
-};
+export default function CounterOutput({ value }) {
+  log("<CounterOutput /> rendered", 2);
 
-export default CounterOutput;
+  const cssClass = value >= 0 ? "counter-output" : "counter-output negative";
+  return <span className={cssClass}>{value}</span>;
+}

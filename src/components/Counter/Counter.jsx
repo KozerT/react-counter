@@ -3,6 +3,7 @@ import IconButton from "../UI/IconButton.jsx";
 import MinusIcon from "../UI/Icons/MinusIcon.jsx";
 import PlusIcon from "../UI/Icons/PlusIcon.jsx";
 import { log } from "../../log.js";
+import CounterOutput from "./CounterOutput";
 
 function isPrime(number) {
   log("Calculating if is prime number", 2, "other");
@@ -45,7 +46,7 @@ const Counter = ({ initialCount }) => {
         <IconButton icon={MinusIcon} onClick={handleDecrement}>
           Decrement
         </IconButton>
-        <span value={counter} />
+        <CounterOutput value={counter} />
         <IconButton icon={PlusIcon} onClick={handleIncrement}>
           Increment
         </IconButton>
